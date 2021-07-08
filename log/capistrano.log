@@ -1,0 +1,16 @@
+# Logfile created on 2021-07-09 00:37:30 +0800 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:37:30 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [b16c6d67] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [b16c6d67] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:39:20 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [6e4e8942] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [6e4e8942] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:41:23 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [04010ecc] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [04010ecc] Command: /usr/bin/env mkdir -p /tmp
