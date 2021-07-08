@@ -14,3 +14,28 @@
   INFO ---------------------------------------------------------------------------
   INFO [04010ecc] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
  DEBUG [04010ecc] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:45:18 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [228bdbbb] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [228bdbbb] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:48:09 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [29a8dc83] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [29a8dc83] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:49:37 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [7053efff] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [7053efff] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:52:55 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [77e9d500] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [77e9d500] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 00:53:44 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [3df30d12] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [3df30d12] Command: /usr/bin/env mkdir -p /tmp
