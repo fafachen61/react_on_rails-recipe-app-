@@ -10,7 +10,7 @@ set :repo_url, "git@github.com:fafachen61/react_on_rails-recipe-app-.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/react_on_rails-recipe-app-"
+set :deploy_to, "/home/deploy2/react_on_rails-recipe-app-"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -23,7 +23,7 @@ set :deploy_to, "/home/deploy/react_on_rails-recipe-app-"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml", "config/master.key"
+append :linked_files, "config/database.yml", "config/secrets.yml"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"

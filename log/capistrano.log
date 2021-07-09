@@ -39,3 +39,72 @@
   INFO ---------------------------------------------------------------------------
   INFO [3df30d12] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
  DEBUG [3df30d12] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 01:00:09 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [b8e618ed] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [b8e618ed] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 01:11:18 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [bdaeea70] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [bdaeea70] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 01:17:44 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [8ade5123] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [8ade5123] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 01:30:46 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [baf86681] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [baf86681] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 15:20:03 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [b673e547] Running /usr/bin/env mkdir -p /tmp as deploy2@104.155.210.183
+ DEBUG [b673e547] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b673e547] Finished in 0.662 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b8438aeb2ac1bc55ceee.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b8438aeb2ac1bc55ceee.sh 100.0%
+  INFO [f75eba1c] Running /usr/bin/env chmod 700 /tmp/git-ssh-b8438aeb2ac1bc55ceee.sh as deploy2@104.155.210.183
+ DEBUG [f75eba1c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-b8438aeb2ac1bc55ceee.sh
+  INFO [f75eba1c] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [97cbf35e] Running /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD as deploy2@104.155.210.183
+ DEBUG [97cbf35e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b8438aeb2ac1bc55ceee.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD )
+ DEBUG [97cbf35e] 	Warning: Permanently added 'github.com,52.192.72.89' (RSA) to the list of known hosts.
+ DEBUG [97cbf35e] 	1576aa10a5d2d853b2a2d0ddb45cd493852f3cab	HEAD
+  INFO [97cbf35e] Finished in 2.481 seconds with exit status 0 (successful).
+  INFO [4984e0e5] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared /home/deploy/react_on_rails-recipe-app-/releases as deploy2@104.155.210.183
+ DEBUG [4984e0e5] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared /home/deploy/react_on_rails-recipe-app-/releases
+ DEBUG [4984e0e5] 	mkdir: cannot create directory ‘/home/deploy/react_on_rails-recipe-app-’: Permission denied
+mkdir: 
+ DEBUG [4984e0e5] 	cannot create directory ‘/home/deploy/react_on_rails-recipe-app-’: Permission denied
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 15:25:32 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [ab2c1a75] Running /usr/bin/env mkdir -p /tmp as deploy2@104.155.210.183
+ DEBUG [ab2c1a75] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ab2c1a75] Finished in 0.521 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-5a57b1ed460adca14bc1.sh 0.0%
+  INFO Uploading /tmp/git-ssh-5a57b1ed460adca14bc1.sh 100.0%
+  INFO [b9c3b041] Running /usr/bin/env chmod 700 /tmp/git-ssh-5a57b1ed460adca14bc1.sh as deploy2@104.155.210.183
+ DEBUG [b9c3b041] Command: /usr/bin/env chmod 700 /tmp/git-ssh-5a57b1ed460adca14bc1.sh
+  INFO [b9c3b041] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [79bed2b7] Running /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD as deploy2@104.155.210.183
+ DEBUG [79bed2b7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-5a57b1ed460adca14bc1.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD )
+ DEBUG [79bed2b7] 	1576aa10a5d2d853b2a2d0ddb45cd493852f3cab	HEAD
+  INFO [79bed2b7] Finished in 2.380 seconds with exit status 0 (successful).
+  INFO [4b92d281] Running /usr/bin/env mkdir -p /home/deploy2/react_on_rails-recipe-app-/shared /home/deploy2/react_on_rails-recipe-app-/releases as deploy2@104.155.210.183
+ DEBUG [4b92d281] Command: /usr/bin/env mkdir -p /home/deploy2/react_on_rails-recipe-app-/shared /home/deploy2/react_on_rails-recipe-app-/releases
+  INFO [4b92d281] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [8c074f78] Running /usr/bin/env mkdir -p /home/deploy2/react_on_rails-recipe-app-/shared/log /home/deploy2/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy2/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy2/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy2/react_on_rails-recipe-app-/shared/public/system /home/deploy2/react_on_rails-recipe-app-/shared/public/assets as deploy2@104.155.210.183
+ DEBUG [8c074f78] Command: /usr/bin/env mkdir -p /home/deploy2/react_on_rails-recipe-app-/shared/log /home/deploy2/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy2/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy2/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy2/react_on_rails-recipe-app-/shared/public/system /home/deploy2/react_on_rails-recipe-app-/shared/public/assets
+  INFO [8c074f78] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [2818c70e] Running /usr/bin/env mkdir -p /home/deploy2/react_on_rails-recipe-app-/shared/config as deploy2@104.155.210.183
+ DEBUG [2818c70e] Command: /usr/bin/env mkdir -p /home/deploy2/react_on_rails-recipe-app-/shared/config
+  INFO [2818c70e] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [185b19b6] Running [ -f /home/deploy2/react_on_rails-recipe-app-/shared/config/database.yml ] as deploy2@104.155.210.183
+ DEBUG [185b19b6] Command: [ -f /home/deploy2/react_on_rails-recipe-app-/shared/config/database.yml ]
+ DEBUG [185b19b6] Finished in 0.100 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy2/react_on_rails-recipe-app-/shared/config/database.yml does not exist on 104.155.210.183
