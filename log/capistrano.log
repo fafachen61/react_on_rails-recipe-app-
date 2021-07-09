@@ -1973,3 +1973,951 @@ is x86_64-linux. Add the current platform to the lockfile with `bundle lock
  DEBUG [754f70fe] 	Your bundle only supports platforms ["x86_64-darwin-19"] but your local platform
 is x86_64-linux. Add the current platform to the lockfile with `bundle lock
 --add-platform x86_64-linux` and try again.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 17:58:53 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f4f9ecf7] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [f4f9ecf7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f4f9ecf7] Finished in 0.521 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-d76a158d609732241aac.sh 0.0%
+  INFO Uploading /tmp/git-ssh-d76a158d609732241aac.sh 100.0%
+  INFO [a4fb3e71] Running /usr/bin/env chmod 700 /tmp/git-ssh-d76a158d609732241aac.sh as deploy@104.155.210.183
+ DEBUG [a4fb3e71] Command: /usr/bin/env chmod 700 /tmp/git-ssh-d76a158d609732241aac.sh
+  INFO [a4fb3e71] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [d84b2975] Running /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD as deploy@104.155.210.183
+ DEBUG [d84b2975] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d76a158d609732241aac.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD )
+ DEBUG [d84b2975] 	477734dd3206f07e011cde49642234264edc94f3	HEAD
+  INFO [d84b2975] Finished in 2.276 seconds with exit status 0 (successful).
+  INFO [8a809552] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared /home/deploy/react_on_rails-recipe-app-/releases as deploy@104.155.210.183
+ DEBUG [8a809552] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared /home/deploy/react_on_rails-recipe-app-/releases
+  INFO [8a809552] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [734f0a93] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/shared/public/assets as deploy@104.155.210.183
+ DEBUG [734f0a93] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/shared/public/assets
+  INFO [734f0a93] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [c9156314] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/config as deploy@104.155.210.183
+ DEBUG [c9156314] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/config
+  INFO [c9156314] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [11409961] Running [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml ] as deploy@104.155.210.183
+ DEBUG [11409961] Command: [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml ]
+ DEBUG [11409961] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [cc33e7cf] Running [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml ] as deploy@104.155.210.183
+ DEBUG [cc33e7cf] Command: [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml ]
+ DEBUG [cc33e7cf] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [efb75c47] Running [ -f /home/deploy/react_on_rails-recipe-app-/current/REVISION ] as deploy@104.155.210.183
+ DEBUG [efb75c47] Command: [ -f /home/deploy/react_on_rails-recipe-app-/current/REVISION ]
+ DEBUG [efb75c47] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [04da35ee] Running [ -f /home/deploy/react_on_rails-recipe-app-/repo/HEAD ] as deploy@104.155.210.183
+ DEBUG [04da35ee] Command: [ -f /home/deploy/react_on_rails-recipe-app-/repo/HEAD ]
+ DEBUG [04da35ee] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/react_on_rails-recipe-app-/repo
+ DEBUG [271e5a73] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [271e5a73] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi
+ DEBUG [271e5a73] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [faa7b87b] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/react_on_rails-recipe-app-.git as deploy@104.155.210.183
+ DEBUG [faa7b87b] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d76a158d609732241aac.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/react_on_rails-recipe-app-.git )
+  INFO [faa7b87b] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [abf93f2d] Running /usr/bin/env git remote update --prune as deploy@104.155.210.183
+ DEBUG [abf93f2d] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d76a158d609732241aac.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [abf93f2d] 	Fetching origin
+ DEBUG [abf93f2d] 	From github.com:fafachen61/react_on_rails-recipe-app-
+   032f065..477734d  master     -> master
+  INFO [abf93f2d] Finished in 2.422 seconds with exit status 0 (successful).
+ DEBUG [20a096be] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [20a096be] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi
+ DEBUG [20a096be] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [0664d92c] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 as deploy@104.155.210.183
+ DEBUG [0664d92c] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d76a158d609732241aac.sh" ; /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 )
+  INFO [0664d92c] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO [4286cb99] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 as deploy@104.155.210.183
+ DEBUG [4286cb99] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d76a158d609732241aac.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 )
+  INFO [4286cb99] Finished in 1.140 seconds with exit status 0 (successful).
+ DEBUG [10523ef7] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [10523ef7] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi
+ DEBUG [10523ef7] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [a05cbb56] Running /usr/bin/env git rev-list --max-count=1 master as deploy@104.155.210.183
+ DEBUG [a05cbb56] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d76a158d609732241aac.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [a05cbb56] 	477734dd3206f07e011cde49642234264edc94f3
+ DEBUG [a05cbb56] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [10fc1d0f] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709095857'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [10fc1d0f] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709095857'" 1>&2; false; fi
+ DEBUG [10fc1d0f] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [cbc1e602] Running /usr/bin/env echo "477734dd3206f07e011cde49642234264edc94f3" > REVISION as deploy@104.155.210.183
+ DEBUG [cbc1e602] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 && /usr/bin/env echo "477734dd3206f07e011cde49642234264edc94f3" > REVISION
+  INFO [cbc1e602] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [935f0d47] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config as deploy@104.155.210.183
+ DEBUG [935f0d47] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config
+  INFO [935f0d47] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [1c652f31] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml ] as deploy@104.155.210.183
+ DEBUG [1c652f31] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml ]
+ DEBUG [1c652f31] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [9dd4bdf5] Running [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml ] as deploy@104.155.210.183
+ DEBUG [9dd4bdf5] Command: [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml ]
+ DEBUG [9dd4bdf5] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [c7195a1f] Running /usr/bin/env rm /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml as deploy@104.155.210.183
+ DEBUG [c7195a1f] Command: /usr/bin/env rm /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml
+  INFO [c7195a1f] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [ade6e081] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml as deploy@104.155.210.183
+ DEBUG [ade6e081] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/database.yml
+  INFO [ade6e081] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [ad643c3f] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/secrets.yml ] as deploy@104.155.210.183
+ DEBUG [ad643c3f] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/secrets.yml ]
+ DEBUG [ad643c3f] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [414aff63] Running [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/secrets.yml ] as deploy@104.155.210.183
+ DEBUG [414aff63] Command: [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/secrets.yml ]
+ DEBUG [414aff63] Finished in 0.094 seconds with exit status 1 (failed).
+  INFO [cd33529e] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/secrets.yml as deploy@104.155.210.183
+ DEBUG [cd33529e] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/config/secrets.yml
+  INFO [cd33529e] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [70a5015e] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public as deploy@104.155.210.183
+ DEBUG [70a5015e] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public
+  INFO [70a5015e] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [54194882] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log ] as deploy@104.155.210.183
+ DEBUG [54194882] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log ]
+ DEBUG [54194882] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [363f1e65] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log ] as deploy@104.155.210.183
+ DEBUG [363f1e65] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log ]
+ DEBUG [363f1e65] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [bf8f54df] Running /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log as deploy@104.155.210.183
+ DEBUG [bf8f54df] Command: /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log
+  INFO [bf8f54df] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [8a3c373b] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log as deploy@104.155.210.183
+ DEBUG [8a3c373b] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/log
+  INFO [8a3c373b] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [56f3be69] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids ] as deploy@104.155.210.183
+ DEBUG [56f3be69] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids ]
+ DEBUG [56f3be69] Finished in 0.091 seconds with exit status 1 (failed).
+ DEBUG [80a06b67] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids ] as deploy@104.155.210.183
+ DEBUG [80a06b67] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids ]
+ DEBUG [80a06b67] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [7c578f89] Running /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids as deploy@104.155.210.183
+ DEBUG [7c578f89] Command: /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids
+  INFO [7c578f89] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [9402f2af] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids as deploy@104.155.210.183
+ DEBUG [9402f2af] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/pids
+  INFO [9402f2af] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [995da8f6] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache ] as deploy@104.155.210.183
+ DEBUG [995da8f6] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache ]
+ DEBUG [995da8f6] Finished in 0.089 seconds with exit status 1 (failed).
+ DEBUG [1e4ca862] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache ] as deploy@104.155.210.183
+ DEBUG [1e4ca862] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache ]
+ DEBUG [1e4ca862] Finished in 0.592 seconds with exit status 0 (successful).
+  INFO [f3e4e048] Running /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache as deploy@104.155.210.183
+ DEBUG [f3e4e048] Command: /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache
+  INFO [f3e4e048] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [615b2b95] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache as deploy@104.155.210.183
+ DEBUG [615b2b95] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/cache
+  INFO [615b2b95] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [5205d786] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/sockets ] as deploy@104.155.210.183
+ DEBUG [5205d786] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/sockets ]
+ DEBUG [5205d786] Finished in 0.093 seconds with exit status 1 (failed).
+ DEBUG [76544939] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/sockets ] as deploy@104.155.210.183
+ DEBUG [76544939] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/sockets ]
+ DEBUG [76544939] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [c363503f] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/sockets as deploy@104.155.210.183
+ DEBUG [c363503f] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/tmp/sockets
+  INFO [c363503f] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [7fce9dcb] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/system ] as deploy@104.155.210.183
+ DEBUG [7fce9dcb] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/system ]
+ DEBUG [7fce9dcb] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [368ed465] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/system ] as deploy@104.155.210.183
+ DEBUG [368ed465] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/system ]
+ DEBUG [368ed465] Finished in 0.152 seconds with exit status 1 (failed).
+  INFO [3075c698] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/system as deploy@104.155.210.183
+ DEBUG [3075c698] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/system
+  INFO [3075c698] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [671320c5] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/assets ] as deploy@104.155.210.183
+ DEBUG [671320c5] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/assets ]
+ DEBUG [671320c5] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [ed19d551] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/assets ] as deploy@104.155.210.183
+ DEBUG [ed19d551] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/assets ]
+ DEBUG [ed19d551] Finished in 0.093 seconds with exit status 1 (failed).
+  INFO [c99cd3d9] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/assets /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/assets as deploy@104.155.210.183
+ DEBUG [c99cd3d9] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/assets /home/deploy/react_on_rails-recipe-app-/releases/20210709095857/public/assets
+  INFO [c99cd3d9] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [2ac0220c] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709095857'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [2ac0220c] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709095857'" 1>&2; false; fi
+ DEBUG [2ac0220c] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [f1b0bf76] Running /usr/bin/env bundle config --local deployment true as deploy@104.155.210.183
+ DEBUG [f1b0bf76] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 && /usr/bin/env bundle config --local deployment true
+  INFO [f1b0bf76] Finished in 0.238 seconds with exit status 0 (successful).
+  INFO [be16201d] Running /usr/bin/env bundle config --local path /home/deploy/react_on_rails-recipe-app-/shared/bundle as deploy@104.155.210.183
+ DEBUG [be16201d] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 && /usr/bin/env bundle config --local path /home/deploy/react_on_rails-recipe-app-/shared/bundle
+  INFO [be16201d] Finished in 0.243 seconds with exit status 0 (successful).
+  INFO [c7f207be] Running /usr/bin/env bundle config --local without development:test as deploy@104.155.210.183
+ DEBUG [c7f207be] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 && /usr/bin/env bundle config --local without development:test
+  INFO [c7f207be] Finished in 0.237 seconds with exit status 0 (successful).
+ DEBUG [ada1e522] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709095857'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [ada1e522] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709095857; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709095857'" 1>&2; false; fi
+ DEBUG [ada1e522] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [4868bffc] Running /usr/bin/env bundle check as deploy@104.155.210.183
+ DEBUG [4868bffc] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 && /usr/bin/env bundle check
+ DEBUG [4868bffc] 	The following gems are missing
+ * rails (5.2.6)
+ * rails (5.2.6)
+ * pg (1.2.3)
+ * pg (1.2.3)
+ * puma (3.12.6)
+ * puma (3.12.6)
+ * sass-rails (5.1.0)
+ DEBUG [4868bffc] 	 * sass-rails (5.1.0)
+ * uglifier (4.2.0)
+ * uglifier (4.2.0)
+ * webpacker (5.4.0)
+ DEBUG [4868bffc] 	 * webpacker (5.4.0)
+ * turbolinks (5.2.1)
+ * turbolinks (5.2.1)
+ * jbuilder (2.11.2)
+ * jbuilder (2.11.2)
+ * bootsnap (1.7.5)
+ DEBUG [4868bffc] 	 * bootsnap (1.7.5)
+ DEBUG [4868bffc] 	 * mysql2 (0.4.10)
+ * mysql2 (0.4.10)
+ DEBUG [4868bffc] 	 * actioncable (5.2.6)
+ DEBUG [4868bffc] 	 * actioncable (5.2.6)
+ * actionmailer (5.2.6)
+ DEBUG [4868bffc] 	 * actionmailer (5.2.6)
+ * actionpack (5.2.6)
+ * actionpack (5.2.6)
+ * actionpack (5.2.6)
+ DEBUG [4868bffc] 	 * actionpack (5.2.6)
+ DEBUG [4868bffc] 	 * actionview (5.2.6)
+ DEBUG [4868bffc] 	 * actionview (5.2.6)
+ DEBUG [4868bffc] 	 * actionview (5.2.6)
+ * actionview (5.2.6)
+ DEBUG [4868bffc] 	 * activejob (5.2.6)
+ DEBUG [4868bffc] 	 * activejob (5.2.6)
+ * activemodel (5.2.6)
+ DEBUG [4868bffc] 	 * activemodel (5.2.6)
+ DEBUG [4868bffc] 	 * activemodel (5.2.6)
+ DEBUG [4868bffc] 	 * activemodel (5.2.6)
+ * activerecord (5.2.6)
+ * activerecord (5.2.6)
+ DEBUG [4868bffc] 	 * activestorage (5.2.6)
+ DEBUG [4868bffc] 	 * activestorage (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * sprockets-rails (3.2.2)
+ DEBUG [4868bffc] 	 * sprockets-rails (3.2.2)
+ * sprockets-rails (3.2.2)
+ DEBUG [4868bffc] 	 * sprockets-rails (3.2.2)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ * railties (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ DEBUG [4868bffc] 	 * sass (3.7.4)
+ DEBUG [4868bffc] 	 * sass (3.7.4)
+ DEBUG [4868bffc] 	 * sprockets (3.7.2)
+ DEBUG [4868bffc] 	 * sprockets (3.7.2)
+ DEBUG [4868bffc] 	 * sprockets (3.7.2)
+ * sprockets (3.7.2)
+ DEBUG [4868bffc] 	 * sprockets-rails (3.2.2)
+ * sprockets-rails (3.2.2)
+ DEBUG [4868bffc] 	 * sprockets-rails (3.2.2)
+ DEBUG [4868bffc] 	 * sprockets-rails (3.2.2)
+ * tilt (2.0.10)
+ DEBUG [4868bffc] 	 * tilt (2.0.10)
+ DEBUG [4868bffc] 	 * execjs (2.8.1)
+ * execjs (2.8.1)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * rack-proxy (0.7.0)
+ DEBUG [4868bffc] 	 * rack-proxy (0.7.0)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ DEBUG [4868bffc] 	 * railties (5.2.6)
+ * railties (5.2.6)
+ DEBUG [4868bffc] 	 * semantic_range (3.0.0)
+ DEBUG [4868bffc] 	 * semantic_range (3.0.0)
+ DEBUG [4868bffc] 	 * turbolinks-source (5.2.0)
+ DEBUG [4868bffc] 	 * turbolinks-source (5.2.0)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * msgpack (1.4.2)
+ DEBUG [4868bffc] 	 * msgpack (1.4.2)
+ * nio4r (2.5.7)
+ * nio4r (2.5.7)
+ DEBUG [4868bffc] 	 * websocket-driver (0.7.5)
+ DEBUG [4868bffc] 	 * websocket-driver (0.7.5)
+ DEBUG [4868bffc] 	 * mail (2.7.1)
+ * mail (2.7.1)
+ DEBUG [4868bffc] 	 * rails-dom-testing (2.0.3)
+ DEBUG [4868bffc] 	 * rails-dom-testing (2.0.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack-test (1.1.0)
+ DEBUG [4868bffc] 	 * rack-test (1.1.0)
+ * rails-html-sanitizer (1.3.0)
+ * rails-html-sanitizer (1.3.0)
+ DEBUG [4868bffc] 	 * rails-html-sanitizer (1.3.0)
+ DEBUG [4868bffc] 	 * rails-html-sanitizer (1.3.0)
+ DEBUG [4868bffc] 	 * builder (3.2.4)
+ DEBUG [4868bffc] 	 * builder (3.2.4)
+ DEBUG [4868bffc] 	 * erubi (1.10.0)
+ DEBUG [4868bffc] 	 * erubi (1.10.0)
+ DEBUG [4868bffc] 	 * rails-html-sanitizer (1.3.0)
+ * rails-html-sanitizer (1.3.0)
+ DEBUG [4868bffc] 	 * rails-html-sanitizer (1.3.0)
+ * rails-html-sanitizer (1.3.0)
+ * globalid (0.4.2)
+ DEBUG [4868bffc] 	 * globalid (0.4.2)
+ DEBUG [4868bffc] 	 * arel (9.0.0)
+ * arel (9.0.0)
+ DEBUG [4868bffc] 	 * marcel (1.0.1)
+ DEBUG [4868bffc] 	 * marcel (1.0.1)
+ DEBUG [4868bffc] 	 * concurrent-ruby (1.1.9)
+ * concurrent-ruby (1.1.9)
+ DEBUG [4868bffc] 	 * concurrent-ruby (1.1.9)
+ * concurrent-ruby (1.1.9)
+ DEBUG [4868bffc] 	 * i18n (1.8.10)
+ DEBUG [4868bffc] 	 * i18n (1.8.10)
+ * i18n (1.8.10)
+ DEBUG [4868bffc] 	 * i18n (1.8.10)
+ * minitest (5.14.4)
+ DEBUG [4868bffc] 	 * minitest (5.14.4)
+ * tzinfo (1.2.9)
+ DEBUG [4868bffc] 	 * tzinfo (1.2.9)
+ DEBUG [4868bffc] 	 * method_source (1.0.0)
+ * method_source (1.0.0)
+ * rake (13.0.6)
+ DEBUG [4868bffc] 	 * rake (13.0.6)
+ DEBUG [4868bffc] 	 * rake (13.0.6)
+ * rake (13.0.6)
+ DEBUG [4868bffc] 	 * thor (1.1.0)
+ DEBUG [4868bffc] 	 * thor (1.1.0)
+ * actionpack (5.2.6)
+ DEBUG [4868bffc] 	 * actionpack (5.2.6)
+ DEBUG [4868bffc] 	 * actionpack (5.2.6)
+ DEBUG [4868bffc] 	 * actionpack (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * sprockets (3.7.2)
+ DEBUG [4868bffc] 	 * sprockets (3.7.2)
+ DEBUG [4868bffc] 	 * sprockets (3.7.2)
+ * sprockets (3.7.2)
+ DEBUG [4868bffc] 	 * sass-listen (4.0.0)
+ DEBUG [4868bffc] 	 * sass-listen (4.0.0)
+ DEBUG [4868bffc] 	 * concurrent-ruby (1.1.9)
+ DEBUG [4868bffc] 	 * concurrent-ruby (1.1.9)
+ DEBUG [4868bffc] 	 * concurrent-ruby (1.1.9)
+ DEBUG [4868bffc] 	 * concurrent-ruby (1.1.9)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * websocket-extensions (0.1.5)
+ DEBUG [4868bffc] 	 * websocket-extensions (0.1.5)
+ DEBUG [4868bffc] 	 * mini_mime (1.1.0)
+ * mini_mime (1.1.0)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ DEBUG [4868bffc] 	 * activesupport (5.2.6)
+ * nokogiri (1.11.7)
+ DEBUG [4868bffc] 	 * nokogiri (1.11.7)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * rack (2.2.3)
+ DEBUG [4868bffc] 	 * loofah (2.10.0)
+ * loofah (2.10.0)
+ DEBUG [4868bffc] 	 * thread_safe (0.3.6)
+ DEBUG [4868bffc] 	 * thread_safe (0.3.6)
+ DEBUG [4868bffc] 	 * rb-fsevent (0.11.0)
+ * rb-fsevent (0.11.0)
+ DEBUG [4868bffc] 	 * rb-inotify (0.10.1)
+ DEBUG [4868bffc] 	 * rb-inotify (0.10.1)
+ * racc (1.5.2)
+ DEBUG [4868bffc] 	 * racc (1.5.2)
+ DEBUG [4868bffc] 	 * crass (1.0.6)
+ DEBUG [4868bffc] 	 * crass (1.0.6)
+ DEBUG [4868bffc] 	 * nokogiri (1.11.7)
+ DEBUG [4868bffc] 	 * nokogiri (1.11.7)
+ DEBUG [4868bffc] 	 * ffi (1.15.3)
+ * ffi (1.15.3)
+ DEBUG [4868bffc] 	Install missing gems with `bundle install`
+ DEBUG [4868bffc] Finished in 0.375 seconds with exit status 1 (failed).
+  INFO [9a540b62] Running /usr/bin/env bundle install --jobs 4 --quiet as deploy@104.155.210.183
+ DEBUG [9a540b62] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709095857 && /usr/bin/env bundle install --jobs 4 --quiet
+ DEBUG [9a540b62] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-wrdj53.rb extconf.rb
+checking for rb_ary_subseq()... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+/usr/lib/ruby/2.5.0/mkmf.rb:456:in `try_do': The compiler failed to generate an
+executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/lib/ruby/2.5.0/mkmf.rb:541:in `try_link0'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:559:in `try_link'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:771:in `try_func'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1058:in `block in have_func'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:948:in `block in checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:346:in `postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:947:in `checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1057:in `have_func'
+	from extconf.rb:6:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/racc-1.5.2/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/racc-1.5.2
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/racc-1.5.2/gem_make.out
+
+An error occurred while installing racc (1.5.2), and Bundler cannot continue.
+Make sure that `gem install racc -v '1.5.2' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  rails was resolved to 5.2.6, which depends on
+    actioncable was resolved to 5.2.6, which depends on
+      actionpack was resolved to 5.2.6, which depends on
+        actionview was resolved to 5.2.6, which depends on
+          rails-dom-testing was resolved to 2.0.3, which depends on
+            nokogiri was resolved to 1.11.7, which depends on
+              racc
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/nio4r-2.5.7/ext/nio4r
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-8q3ygh.rb extconf.rb
+checking for unistd.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+/usr/lib/ruby/2.5.0/mkmf.rb:456:in `try_do': The compiler failed to generate an
+executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/lib/ruby/2.5.0/mkmf.rb:590:in `try_cpp'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1098:in `block in have_header'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:948:in `block in checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:346:in `postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:947:in `checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1097:in `have_header'
+	from extconf.rb:15:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/nio4r-2.5.7/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/nio4r-2.5.7
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/nio4r-2.5.7/gem_make.out
+
+An error occurred while installing nio4r (2.5.7), and Bundler cannot continue.
+Make sure that `gem install nio4r -v '2.5.7' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  rails was resolved to 5.2.6, which depends on
+    actioncable was resolved to 5.2.6, which depends on
+      nio4r
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-130iky6.rb extconf.rb
+creating Makefile
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" clean
+sh: 1: make: not found
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR="
+sh: 1: make: not found
+
+make failed, exit code 127
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/websocket-driver-0.7.5
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/websocket-driver-0.7.5/gem_make.out
+
+An error occurred while installing websocket-driver (0.7.5), and Bundler cannot
+continue.
+Make sure that `gem install websocket-driver -v '0.7.5' --source
+'https://rubygems.org/'` succeeds before bundling.
+
+In Gemfile:
+  rails was resolved to 5.2.6, which depends on
+    actioncable was resolved to 5.2.6, which depends on
+      websocket-driver
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/msgpack-1.4.2/ext/msgpack
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-13z07bn.rb extconf.rb
+checking for ruby/st.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+/usr/lib/ruby/2.5.0/mkmf.rb:456:in `try_do': The compiler failed to generate an
+executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/lib/ruby/2.5.0/mkmf.rb:590:in `try_cpp'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1098:in `block in have_header'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:948:in `block in checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:346:in `postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:947:in `checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1097:in `have_header'
+	from extconf.rb:3:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/msgpack-1.4.2/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/msgpack-1.4.2
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/msgpack-1.4.2/gem_make.out
+
+An error occurred while installing msgpack (1.4.2), and Bundler cannot continue.
+Make sure that `gem install msgpack -v '1.4.2' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  bootsnap was resolved to 1.7.5, which depends on
+    msgpack
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/ffi-1.15.3/ext/ffi_c
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-m1zrkz.rb extconf.rb
+checking for ffi.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+	--with-ffi_c-dir
+	--without-ffi_c-dir
+	--with-ffi_c-include
+	--without-ffi_c-include=${ffi_c-dir}/include
+	--with-ffi_c-lib
+	--without-ffi_c-lib=${ffi_c-dir}/lib
+	--enable-system-libffi
+	--disable-system-libffi
+	--with-libffi-config
+	--without-libffi-config
+	--with-pkg-config
+	--without-pkg-config
+/usr/lib/ruby/2.5.0/mkmf.rb:456:in `try_do': The compiler failed to generate an
+executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/lib/ruby/2.5.0/mkmf.rb:590:in `try_cpp'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1098:in `block in have_header'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:948:in `block in checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:346:in `postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:947:in `checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1097:in `have_header'
+	from extconf.rb:10:in `system_libffi_usable?'
+	from extconf.rb:42:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/ffi-1.15.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/ffi-1.15.3
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/ffi-1.15.3/gem_make.out
+
+An error occurred while installing ffi (1.15.3), and Bundler cannot continue.
+Make sure that `gem install ffi -v '1.15.3' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  sass-rails was resolved to 5.1.0, which depends on
+    sass was resolved to 3.7.4, which depends on
+      sass-listen was resolved to 4.0.0, which depends on
+        rb-inotify was resolved to 0.10.1, which depends on
+          ffi
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/mysql2-0.4.10/ext/mysql2
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-tvpxzk.rb extconf.rb
+checking for rb_absint_size()... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+/usr/lib/ruby/2.5.0/mkmf.rb:456:in `try_do': The compiler failed to generate an
+executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/lib/ruby/2.5.0/mkmf.rb:541:in `try_link0'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:559:in `try_link'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:771:in `try_func'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1058:in `block in have_func'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:948:in `block in checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:346:in `postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:947:in `checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1057:in `have_func'
+	from extconf.rb:26:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/mysql2-0.4.10/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/mysql2-0.4.10
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/mysql2-0.4.10/gem_make.out
+
+An error occurred while installing mysql2 (0.4.10), and Bundler cannot continue.
+Make sure that `gem install mysql2 -v '0.4.10' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  mysql2
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/pg-1.2.3/ext
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-dygswz.rb extconf.rb
+checking for pg_config... no
+No pg_config... trying anyway. If building fails, please try again with
+ --with-pg-config=/path/to/pg_config
+checking for libpq-fe.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+	--with-pg
+	--without-pg
+	--enable-windows-cross
+	--disable-windows-cross
+	--with-pg-config
+	--without-pg-config
+	--with-pg_config
+	--without-pg_config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/lib
+/usr/lib/ruby/2.5.0/mkmf.rb:456:in `try_do': The compiler failed to generate an
+executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/lib/ruby/2.5.0/mkmf.rb:590:in `try_cpp'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1151:in `block in find_header'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:948:in `block in checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:346:in `postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:947:in `checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1150:in `find_header'
+	from extconf.rb:54:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/pg-1.2.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/pg-1.2.3
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/pg-1.2.3/gem_make.out
+
+An error occurred while installing pg (1.2.3), and Bundler cannot continue.
+Make sure that `ge
+ DEBUG [9a540b62] 	m install pg -v '1.2.3' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  pg
+
+
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/puma-3.12.6/ext/puma_http11
+/usr/bin/ruby2.5 -r ./siteconf20210709-12372-ukut3c.rb extconf.rb
+checking for BIO_read() in -lcrypto... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+	--with-puma_http11-dir
+	--without-puma_http11-dir
+	--with-puma_http11-include
+	--without-puma_http11-include=${puma_http11-dir}/include
+	--with-puma_http11-lib
+	--without-puma_http11-lib=${puma_http11-dir}/lib
+	--with-openssl-dir
+	--without-openssl-dir
+	--with-openssl-include
+	--without-openssl-include=${openssl-dir}/include
+	--with-openssl-lib
+	--without-openssl-lib=${openssl-dir}/lib
+	--with-cryptolib
+	--without-cryptolib
+/usr/lib/ruby/2.5.0/mkmf.rb:456:in `try_do': The compiler failed to generate an
+executable file. (RuntimeError)
+You have to install development tools first.
+	from /usr/lib/ruby/2.5.0/mkmf.rb:541:in `try_link0'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:559:in `try_link'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:771:in `try_func'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1005:in `block in have_library'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:948:in `block in checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:350:in `block in postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:320:in `open'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:346:in `postpone'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:947:in `checking_for'
+	from /usr/lib/ruby/2.5.0/mkmf.rb:1000:in `have_library'
+	from extconf.rb:8:in `block in <main>'
+	from extconf.rb:8:in `each'
+	from extconf.rb:8:in `find'
+	from extconf.rb:8:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/puma-3.12.6/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/gems/puma-3.12.6
+for inspection.
+Results logged to
+/home/deploy/react_on_rails-recipe-app-/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/puma-3.12.6/gem_make.out
+
+An error occurred while installing puma (3.12.6), and Bundler cannot continue.
+Make sure that `gem install puma -v '3.12.6' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  puma
