@@ -4754,3 +4754,186 @@ In Gemfile:
  DEBUG [5b53aeae] Running [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml ] as deploy@104.155.210.183
  DEBUG [5b53aeae] Command: [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml ]
  DEBUG [5b53aeae] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-09 23:31:19 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a7b49183] Running /usr/bin/env mkdir -p /tmp as deploy@104.155.210.183
+ DEBUG [a7b49183] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a7b49183] Finished in 0.561 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7116629d4837a74956ed.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7116629d4837a74956ed.sh 100.0%
+  INFO [d3872b09] Running /usr/bin/env chmod 700 /tmp/git-ssh-7116629d4837a74956ed.sh as deploy@104.155.210.183
+ DEBUG [d3872b09] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7116629d4837a74956ed.sh
+  INFO [d3872b09] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [ba7cdbbf] Running /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD as deploy@104.155.210.183
+ DEBUG [ba7cdbbf] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7116629d4837a74956ed.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD )
+ DEBUG [ba7cdbbf] 	2e42702b338b283c35334978a93745bf831bee1b	HEAD
+  INFO [ba7cdbbf] Finished in 2.274 seconds with exit status 0 (successful).
+  INFO [7ab7622a] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared /home/deploy/react_on_rails-recipe-app-/releases as deploy@104.155.210.183
+ DEBUG [7ab7622a] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared /home/deploy/react_on_rails-recipe-app-/releases
+  INFO [7ab7622a] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [9dbb122b] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/shared/public/assets as deploy@104.155.210.183
+ DEBUG [9dbb122b] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/shared/public/assets
+  INFO [9dbb122b] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [4ac61110] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/config as deploy@104.155.210.183
+ DEBUG [4ac61110] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/shared/config
+  INFO [4ac61110] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [891e4ba4] Running [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml ] as deploy@104.155.210.183
+ DEBUG [891e4ba4] Command: [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml ]
+ DEBUG [891e4ba4] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [a2c42426] Running [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml ] as deploy@104.155.210.183
+ DEBUG [a2c42426] Command: [ -f /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml ]
+ DEBUG [a2c42426] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [b3d3bef2] Running [ -f /home/deploy/react_on_rails-recipe-app-/current/REVISION ] as deploy@104.155.210.183
+ DEBUG [b3d3bef2] Command: [ -f /home/deploy/react_on_rails-recipe-app-/current/REVISION ]
+ DEBUG [b3d3bef2] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [9488ee4e] Running [ -f /home/deploy/react_on_rails-recipe-app-/repo/HEAD ] as deploy@104.155.210.183
+ DEBUG [9488ee4e] Command: [ -f /home/deploy/react_on_rails-recipe-app-/repo/HEAD ]
+ DEBUG [9488ee4e] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/react_on_rails-recipe-app-/repo
+ DEBUG [37894f80] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [37894f80] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi
+ DEBUG [37894f80] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [74619dba] Running /usr/bin/env git remote set-url origin git@github.com:fafachen61/react_on_rails-recipe-app-.git as deploy@104.155.210.183
+ DEBUG [74619dba] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7116629d4837a74956ed.sh" ; /usr/bin/env git remote set-url origin git@github.com:fafachen61/react_on_rails-recipe-app-.git )
+  INFO [74619dba] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [557847c3] Running /usr/bin/env git remote update --prune as deploy@104.155.210.183
+ DEBUG [557847c3] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7116629d4837a74956ed.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [557847c3] 	Fetching origin
+ DEBUG [557847c3] 	From github.com:fafachen61/react_on_rails-recipe-app-
+   603aa5c..2e42702  master     -> master
+  INFO [557847c3] Finished in 2.323 seconds with exit status 0 (successful).
+ DEBUG [94cfa78d] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [94cfa78d] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi
+ DEBUG [94cfa78d] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [77ce4d84] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 as deploy@104.155.210.183
+ DEBUG [77ce4d84] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7116629d4837a74956ed.sh" ; /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 )
+  INFO [77ce4d84] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [75cdfcab] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 as deploy@104.155.210.183
+ DEBUG [75cdfcab] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7116629d4837a74956ed.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 )
+  INFO [75cdfcab] Finished in 1.477 seconds with exit status 0 (successful).
+ DEBUG [8b4d3321] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [8b4d3321] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/repo; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/repo'" 1>&2; false; fi
+ DEBUG [8b4d3321] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [10fe0bee] Running /usr/bin/env git rev-list --max-count=1 master as deploy@104.155.210.183
+ DEBUG [10fe0bee] Command: cd /home/deploy/react_on_rails-recipe-app-/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7116629d4837a74956ed.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [10fe0bee] 	2e42702b338b283c35334978a93745bf831bee1b
+ DEBUG [10fe0bee] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [36ed612d] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709153122'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [36ed612d] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709153122'" 1>&2; false; fi
+ DEBUG [36ed612d] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [f528dbba] Running /usr/bin/env echo "2e42702b338b283c35334978a93745bf831bee1b" > REVISION as deploy@104.155.210.183
+ DEBUG [f528dbba] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 && /usr/bin/env echo "2e42702b338b283c35334978a93745bf831bee1b" > REVISION
+  INFO [f528dbba] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [779fadf5] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config as deploy@104.155.210.183
+ DEBUG [779fadf5] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config
+  INFO [779fadf5] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [0acd9ca0] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml ] as deploy@104.155.210.183
+ DEBUG [0acd9ca0] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml ]
+ DEBUG [0acd9ca0] Finished in 0.106 seconds with exit status 1 (failed).
+ DEBUG [4e4ca00a] Running [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml ] as deploy@104.155.210.183
+ DEBUG [4e4ca00a] Command: [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml ]
+ DEBUG [4e4ca00a] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [e44b4050] Running /usr/bin/env rm /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml as deploy@104.155.210.183
+ DEBUG [e44b4050] Command: /usr/bin/env rm /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml
+  INFO [e44b4050] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [ed63a5b6] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml as deploy@104.155.210.183
+ DEBUG [ed63a5b6] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/database.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/database.yml
+  INFO [ed63a5b6] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [7914c9b5] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/secrets.yml ] as deploy@104.155.210.183
+ DEBUG [7914c9b5] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/secrets.yml ]
+ DEBUG [7914c9b5] Finished in 0.148 seconds with exit status 1 (failed).
+ DEBUG [5c302c0c] Running [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/secrets.yml ] as deploy@104.155.210.183
+ DEBUG [5c302c0c] Command: [ -f /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/secrets.yml ]
+ DEBUG [5c302c0c] Finished in 0.097 seconds with exit status 1 (failed).
+  INFO [626ba3db] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/secrets.yml as deploy@104.155.210.183
+ DEBUG [626ba3db] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/config/secrets.yml /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/config/secrets.yml
+  INFO [626ba3db] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [42d251f0] Running /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public as deploy@104.155.210.183
+ DEBUG [42d251f0] Command: /usr/bin/env mkdir -p /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public
+  INFO [42d251f0] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [9fe2ad78] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log ] as deploy@104.155.210.183
+ DEBUG [9fe2ad78] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log ]
+ DEBUG [9fe2ad78] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [67814b4d] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log ] as deploy@104.155.210.183
+ DEBUG [67814b4d] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log ]
+ DEBUG [67814b4d] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [2c0e2fba] Running /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log as deploy@104.155.210.183
+ DEBUG [2c0e2fba] Command: /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log
+  INFO [2c0e2fba] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [2d2aef7e] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log as deploy@104.155.210.183
+ DEBUG [2d2aef7e] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/log /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/log
+  INFO [2d2aef7e] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [cff64c48] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids ] as deploy@104.155.210.183
+ DEBUG [cff64c48] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids ]
+ DEBUG [cff64c48] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [04f7ffd1] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids ] as deploy@104.155.210.183
+ DEBUG [04f7ffd1] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids ]
+ DEBUG [04f7ffd1] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [2f7d8d62] Running /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids as deploy@104.155.210.183
+ DEBUG [2f7d8d62] Command: /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids
+  INFO [2f7d8d62] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [51cb25f8] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids as deploy@104.155.210.183
+ DEBUG [51cb25f8] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/pids /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/pids
+  INFO [51cb25f8] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [a92daa57] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache ] as deploy@104.155.210.183
+ DEBUG [a92daa57] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache ]
+ DEBUG [a92daa57] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [2a9f3059] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache ] as deploy@104.155.210.183
+ DEBUG [2a9f3059] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache ]
+ DEBUG [2a9f3059] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [7048e576] Running /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache as deploy@104.155.210.183
+ DEBUG [7048e576] Command: /usr/bin/env rm -rf /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache
+  INFO [7048e576] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [986d06e3] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache as deploy@104.155.210.183
+ DEBUG [986d06e3] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/cache /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/cache
+  INFO [986d06e3] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [d346b458] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/sockets ] as deploy@104.155.210.183
+ DEBUG [d346b458] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/sockets ]
+ DEBUG [d346b458] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [af5f7eea] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/sockets ] as deploy@104.155.210.183
+ DEBUG [af5f7eea] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/sockets ]
+ DEBUG [af5f7eea] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [58a24686] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/sockets as deploy@104.155.210.183
+ DEBUG [58a24686] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/tmp/sockets /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/tmp/sockets
+  INFO [58a24686] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [6582fa81] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/system ] as deploy@104.155.210.183
+ DEBUG [6582fa81] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/system ]
+ DEBUG [6582fa81] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [2b619b43] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/system ] as deploy@104.155.210.183
+ DEBUG [2b619b43] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/system ]
+ DEBUG [2b619b43] Finished in 0.100 seconds with exit status 1 (failed).
+  INFO [e83c1df9] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/system as deploy@104.155.210.183
+ DEBUG [e83c1df9] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/system /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/system
+  INFO [e83c1df9] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [322467ed] Running [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/assets ] as deploy@104.155.210.183
+ DEBUG [322467ed] Command: [ -L /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/assets ]
+ DEBUG [322467ed] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [d6f74a20] Running [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/assets ] as deploy@104.155.210.183
+ DEBUG [d6f74a20] Command: [ -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/assets ]
+ DEBUG [d6f74a20] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [f1d1c894] Running /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/assets /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/assets as deploy@104.155.210.183
+ DEBUG [f1d1c894] Command: /usr/bin/env ln -s /home/deploy/react_on_rails-recipe-app-/shared/public/assets /home/deploy/react_on_rails-recipe-app-/releases/20210709153122/public/assets
+  INFO [f1d1c894] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [42c460e1] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709153122'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [42c460e1] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709153122'" 1>&2; false; fi
+ DEBUG [42c460e1] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [d74d96f9] Running /usr/bin/env bundle config --local deployment true as deploy@104.155.210.183
+ DEBUG [d74d96f9] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 && /usr/bin/env bundle config --local deployment true
+  INFO [d74d96f9] Finished in 0.253 seconds with exit status 0 (successful).
+  INFO [e9fb2d1b] Running /usr/bin/env bundle config --local path /home/deploy/react_on_rails-recipe-app-/shared/bundle as deploy@104.155.210.183
+ DEBUG [e9fb2d1b] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 && /usr/bin/env bundle config --local path /home/deploy/react_on_rails-recipe-app-/shared/bundle
+  INFO [e9fb2d1b] Finished in 0.256 seconds with exit status 0 (successful).
+  INFO [d427be49] Running /usr/bin/env bundle config --local without development:test as deploy@104.155.210.183
+ DEBUG [d427be49] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 && /usr/bin/env bundle config --local without development:test
+  INFO [d427be49] Finished in 0.251 seconds with exit status 0 (successful).
+ DEBUG [99f720b4] Running if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709153122'" 1>&2; false; fi as deploy@104.155.210.183
+ DEBUG [99f720b4] Command: if test ! -d /home/deploy/react_on_rails-recipe-app-/releases/20210709153122; then echo "Directory does not exist '/home/deploy/react_on_rails-recipe-app-/releases/20210709153122'" 1>&2; false; fi
+ DEBUG [99f720b4] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [5a22a596] Running /usr/bin/env bundle check as deploy@104.155.210.183
+ DEBUG [5a22a596] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 && /usr/bin/env bundle check
+ DEBUG [5a22a596] 	Your Ruby version is 2.5.8, but your Gemfile specified 2.5.3
+ DEBUG [5a22a596] Finished in 0.358 seconds with exit status 18 (failed).
+  INFO [95f2f8ac] Running /usr/bin/env bundle install --jobs 4 --quiet as deploy@104.155.210.183
+ DEBUG [95f2f8ac] Command: cd /home/deploy/react_on_rails-recipe-app-/releases/20210709153122 && /usr/bin/env bundle install --jobs 4 --quiet
+ DEBUG [95f2f8ac] 	Your Ruby version is 2.5.8, but your Gemfile specified 2.5.3
