@@ -1,0 +1,16 @@
+current directory: /Users/chenfayu/Desktop/react_on_rails-recipe-app-/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+/Users/chenfayu/.rvm/rubies/ruby-2.5.3/bin/ruby -I /Users/chenfayu/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210709-52191-bxx4cr.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/chenfayu/Desktop/react_on_rails-recipe-app-/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/chenfayu/Desktop/react_on_rails-recipe-app-/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/chenfayu/Desktop/react_on_rails-recipe-app-/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20210709-52191-1btz2yn/racc

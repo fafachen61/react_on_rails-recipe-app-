@@ -661,3 +661,13 @@ Processing by Api::V1::RecipesController#index as */*
 Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2021-07-10 00:22:09 +0800
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/ruby/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (2.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2169ms (Views: 2164.1ms | ActiveRecord: 0.0ms)
+
+
