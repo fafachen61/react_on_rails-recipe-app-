@@ -12606,3 +12606,32 @@ succeeds before bundling.
 
 In Gemfile:
   puma
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-07-10 12:03:43 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4d183e6f] Running /usr/bin/env mkdir -p /tmp as b08901034@104.155.210.183
+ DEBUG [4d183e6f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4d183e6f] Finished in 0.544 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e2f48f711e8531d01b0c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e2f48f711e8531d01b0c.sh 100.0%
+  INFO [8cafde7c] Running /usr/bin/env chmod 700 /tmp/git-ssh-e2f48f711e8531d01b0c.sh as b08901034@104.155.210.183
+ DEBUG [8cafde7c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e2f48f711e8531d01b0c.sh
+  INFO [8cafde7c] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [22d57dfd] Running /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD as b08901034@104.155.210.183
+ DEBUG [22d57dfd] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e2f48f711e8531d01b0c.sh" ; /usr/bin/env git ls-remote git@github.com:fafachen61/react_on_rails-recipe-app-.git HEAD )
+ DEBUG [22d57dfd] 	Warning: Permanently added 'github.com,13.114.40.48' (RSA) to the list of known hosts.
+ DEBUG [22d57dfd] 	d4abef002265de91e5267e8685305859916752ea	HEAD
+  INFO [22d57dfd] Finished in 2.298 seconds with exit status 0 (successful).
+  INFO [95f8069b] Running /usr/bin/env mkdir -p /home/b08901034/react_on_rails-recipe-app-/shared /home/b08901034/react_on_rails-recipe-app-/releases as b08901034@104.155.210.183
+ DEBUG [95f8069b] Command: /usr/bin/env mkdir -p /home/b08901034/react_on_rails-recipe-app-/shared /home/b08901034/react_on_rails-recipe-app-/releases
+  INFO [95f8069b] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [826813cc] Running /usr/bin/env mkdir -p /home/b08901034/react_on_rails-recipe-app-/shared/log /home/b08901034/react_on_rails-recipe-app-/shared/tmp/pids /home/b08901034/react_on_rails-recipe-app-/shared/tmp/cache /home/b08901034/react_on_rails-recipe-app-/shared/tmp/sockets /home/b08901034/react_on_rails-recipe-app-/shared/public/system /home/b08901034/react_on_rails-recipe-app-/shared/public/assets as b08901034@104.155.210.183
+ DEBUG [826813cc] Command: /usr/bin/env mkdir -p /home/b08901034/react_on_rails-recipe-app-/shared/log /home/b08901034/react_on_rails-recipe-app-/shared/tmp/pids /home/b08901034/react_on_rails-recipe-app-/shared/tmp/cache /home/b08901034/react_on_rails-recipe-app-/shared/tmp/sockets /home/b08901034/react_on_rails-recipe-app-/shared/public/system /home/b08901034/react_on_rails-recipe-app-/shared/public/assets
+  INFO [826813cc] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [b85a8fcf] Running /usr/bin/env mkdir -p /home/b08901034/react_on_rails-recipe-app-/shared/config as b08901034@104.155.210.183
+ DEBUG [b85a8fcf] Command: /usr/bin/env mkdir -p /home/b08901034/react_on_rails-recipe-app-/shared/config
+  INFO [b85a8fcf] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [81a65f4f] Running [ -f /home/b08901034/react_on_rails-recipe-app-/shared/config/database.yml ] as b08901034@104.155.210.183
+ DEBUG [81a65f4f] Command: [ -f /home/b08901034/react_on_rails-recipe-app-/shared/config/database.yml ]
+ DEBUG [81a65f4f] Finished in 0.097 seconds with exit status 1 (failed).
+ ERROR linked file /home/b08901034/react_on_rails-recipe-app-/shared/config/database.yml does not exist on 104.155.210.183
