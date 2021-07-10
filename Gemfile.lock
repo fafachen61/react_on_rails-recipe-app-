@@ -96,7 +96,7 @@ GEM
     nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    pg (1.2.3)
+    pg (1.2.0)
     puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
