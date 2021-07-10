@@ -10,7 +10,7 @@ set :repo_url, "git@github.com:fafachen61/react_on_rails-recipe-app-.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/react_on_rails-recipe-app-"
+set :deploy_to, "/home/b08901034/react_on_rails-recipe-app-"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
