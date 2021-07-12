@@ -698,3 +698,43 @@ Processing by Api::V1::RecipesController#index as */*
 Completed 200 OK in 47ms (Views: 9.2ms | ActiveRecord: 31.8ms)
 
 
+Started GET "/" for ::1 at 2021-07-12 12:26:58 +0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/chenfayu/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (1.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1285ms (Views: 1279.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2021-07-12 12:27:01 +0800
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4
+Completed 200 OK in 23ms (Views: 9.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/api/v1/show/8" for ::1 at 2021-07-12 12:27:04 +0800
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:36
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-07-12 12:27:08 +0800
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (0.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2021-07-12 12:27:09 +0800
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
