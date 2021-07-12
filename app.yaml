@@ -1,0 +1,16 @@
+entrypoint: bundle exec rackup --port $PORT
+env: flex
+runtime: ruby
+handlers:
+# Serve all static files with url ending with a file extension
+- url: /(.*\.(html|css|js))
+  static_files: build/\1
+  upload: build/(.*\.(html|css|js))
+# Catch all handler to index.html
+- url: /.*
+  static_files: build/index.html
+  upload: build/index.html
+
+env_variables:
+  SECRET_KEY_BASE: bfc451ab3edbe0aa2b3db8dc5add9e4e31b5f4a3c929cc9a1ed958f4895d85a925f28eb770ead1d442002c9b8083c0f75d79791a8073f14525348bd411803abe
+

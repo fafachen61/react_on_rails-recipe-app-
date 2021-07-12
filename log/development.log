@@ -671,3 +671,30 @@ Processing by HomepageController#index as HTML
 Completed 200 OK in 2169ms (Views: 2164.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-07-11 22:56:17 +0800
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/chenfayu/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2087ms (Views: 2080.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-07-11 23:34:31 +0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/chenfayu/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1324ms (Views: 1316.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2021-07-11 23:34:35 +0800
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (9.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4
+Completed 200 OK in 47ms (Views: 9.2ms | ActiveRecord: 31.8ms)
+
+
